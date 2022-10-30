@@ -1,0 +1,45 @@
+.container {
+  align-content: flex-start;
+  background-color: #3e6d9c;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: 500px;
+  .tasks-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+    row-gap: 20px;
+    .item-container {
+      background-color: #001253;
+      border-radius: 10px;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 5px;
+      .top-row {
+        column-gap: 10px;
+        display: grid;
+        grid-template-columns: 20px 300px;
+      }
+      .bottom-row {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 100px 60px;
+        justify-items: center;
+        button {
+          height: 40%;
+        }
+      }
+    }
+  }
+  .search-container {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 20px;
+    width: 40%;
+  }
+}
